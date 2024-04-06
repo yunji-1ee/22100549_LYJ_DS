@@ -17,14 +17,16 @@ st_score getScore() {
     score.total = score.kor + score.eng + score.math;
     score.average = score.total / 3.0;
     
-    score.result = (score.average >= 70) ? "Pass" : "Fail";
+
     return score;
 }
 
 int main() {
     st_score score = getScore();
-    cout << "평균 점수: " << score.average << endl;
-    cout << "결과: " << score.result << endl;
+   cout << score.total << " " << score.average << endl;
+    cout << "Korean - " << (score.kor >= 70 ? "Pass" : "Fail") << endl;
+    cout << "English - " << (score.eng >= 70 ? "Pass" : "Fail") << endl;
+    cout << "Math - " << (score.math >= 70 ? "Pass" : "Fail") << endl;
 
     return 0;
 }
