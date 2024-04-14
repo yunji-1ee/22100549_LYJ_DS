@@ -1,6 +1,11 @@
 #include <iostream>
 #include <string>
 
+
+//시작: 8:00
+//끝:  8: 40
+
+
 // 공통 prefix를 찾는 함수
 std::string findCommonPrefix(std::string *words, int count) {
     if (count == 0) return "?";

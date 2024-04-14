@@ -1,5 +1,9 @@
 #include <iostream>
 
+
+//시작: 11:00
+//끝:  12:00 ~
+
 struct Product {
     char name[100];
     int price;

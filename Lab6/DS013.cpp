@@ -2,6 +2,10 @@
 #include <string>
 using namespace std;
 
+
+//시작: 1:05
+//끝:  1:46
+
 struct Menu {
     string name;
     int price;

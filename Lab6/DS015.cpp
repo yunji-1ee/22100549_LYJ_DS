@@ -1,6 +1,10 @@
 #include <iostream>
 #include <string>
 
+
+//시작: 5:15
+//끝:  5: 30
+
 // 문자열 앞의 공백과 탭 제거
 std::string ltrim(const std::string& str) {
     size_t start = str.find_first_not_of(" \t");

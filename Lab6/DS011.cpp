@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+//시작: 10:15
+//끝:  10: 30
 void calculateSumAndMax(int* array, int size, int& totalSum, int& maxValue) {
     totalSum = 0;  
     maxValue = array[0]; 
