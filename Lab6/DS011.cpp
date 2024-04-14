@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 
 void calculateSumAndMax(int* array, int size, int& totalSum, int& maxValue) {
     totalSum = 0;  
