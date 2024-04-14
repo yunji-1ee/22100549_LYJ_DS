@@ -30,22 +30,15 @@ std::string findCommonPrefix(std::string *words, int count) {
 }
 
 int main() {
-    int numWords; 
-    std::cin >> numWords;
-    std::cin.ignore();
-    
-    // 동적으로 문자열 배열을 할당
-    std::string* words = new std::string[numWords];
+    const int numWords = 3; // 입력받을 문자열 개수
+    std::string words[numWords];
 
     for (int i = 0; i < numWords; ++i) {
-         getline(std::cin, words[i]);
+        std::cin >> words[i];
     }
 
     std::string commonPrefix = findCommonPrefix(words, numWords);
     std::cout << commonPrefix << std::endl;
-
- // 동적 할당된 메모리 해제
-    delete[] words;
 
     return 0;
 }
