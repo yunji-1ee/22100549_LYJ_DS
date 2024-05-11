@@ -2,7 +2,7 @@
 #include <sstream>
 #include <string>
 #include <stdexcept>
-#include <cctype>ㄴ
+#include <cctype>
 using namespace std;
 
 class MyLinkedStack {
@@ -52,7 +52,7 @@ int evaluateExpression(const string& expression) {
                 result = stack.pop();
                 return result;  
             } else {
-                cout << expression << " => Too many operands !!!" << endl;
+                cout << " => Too many operands !!!" << endl;
                 return -1;
             }
 
@@ -73,19 +73,19 @@ int evaluateExpression(const string& expression) {
                 case '*': stack.push(left * right); break;
                 case '/':
                     if (right == 0) {
-                        cout << expression << " => Division by 0 !!!" << endl;
+                        cout << " => Division by 0 !!!" << endl;
                         return -1;
                     }
                     stack.push(left / right);
                     break;
                 default:
-                    cout << expression << " => Expression error !!!" << endl;
+                    cout << " => Expression error !!!" << endl;
                     return -1;
             }
         }
     }
 
-    cout << expression << " => Expression error !!!" << endl;
+    cout << "=> Expression error !!!" << endl;
     return -1;
 }
 
@@ -94,7 +94,7 @@ int main() {
     getline(cin, expression);
     int result = evaluateExpression(expression);
     if (result != -1) {
-        cout << expression << result << endl;
+        cout << expression << " " << result << endl;
     }
     return 0;
 }
