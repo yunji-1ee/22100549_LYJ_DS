@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdexcept>
 using namespace std;
 
 template <typename T>
@@ -83,7 +82,6 @@ public:
     }
 };
 
-// 명령어 처리하기
 void processCommands(MyCircularQueue<int>& queue) {
     string command;
     while (true) {
@@ -105,8 +103,9 @@ void processCommands(MyCircularQueue<int>& queue) {
         } else if (command == "print") {
             queue.printDetail();
         } else if (command == "q") {
-            cout<<"bye";
             break;
+        } else {
+            cout << "Invalid command" << endl;
         }
     }
 }

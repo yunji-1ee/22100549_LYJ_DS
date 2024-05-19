@@ -113,6 +113,6 @@ void analyzeGPA(const string& filename) {
 }
 
 int main() {
-    analyzeGPA("data.txt");
+    analyzeGPA("data1.txt");
     return 0;
 }
