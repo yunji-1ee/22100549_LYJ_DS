@@ -13,6 +13,6 @@ DS052
 
 
 DS053
-<img src="https://github.com/yunji-1ee/22100549_LYJ_DS/blob/main/result/DS003(1).png?raw=true">
+<img src="https://github.com/yunji-1ee/22100549_LYJ_DS/blob/main/Lab11/Result/DS053(1).png?raw=true">
 
-<img src="https://github.com/yunji-1ee/22100549_LYJ_DS/blob/main/result/DS003(2).png?raw=true">
+<img src="https://github.com/yunji-1ee/22100549_LYJ_DS/blob/main/Lab11/Result/DS053(2).png?raw=true">
