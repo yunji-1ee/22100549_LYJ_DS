@@ -10,9 +10,9 @@ DS061
 
 DS062
 
-<img src="">
+<img src="https://github.com/yunji-1ee/22100549_LYJ_DS/blob/main/Lab12/RESULT/DS062(1).png?raw=true">
 
-<img src="">
+<img src="https://github.com/yunji-1ee/22100549_LYJ_DS/blob/main/Lab12/RESULT/DS062(2).png?raw=true">
 
 
 DS063

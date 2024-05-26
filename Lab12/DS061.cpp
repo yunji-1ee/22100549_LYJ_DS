@@ -1,4 +1,4 @@
-// main.cpp
+// main.cpp 약 20분 소요
 
 #include <iostream>
 #include "Queue.h"
