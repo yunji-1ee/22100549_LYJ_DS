@@ -1,50 +1,44 @@
+#include <iostream>
 #include "MinHeap.h"
 
 int main() {
     MinHeap heap;
-    int choice;
+    int command, value;
 
-    while (true) {
-        std::cout << "1. Array to minHeap 2. insert 3. delete 4. print 0. quit > ";
-        std::cin >> choice;
-
-        if (choice == 1) {
-            int N;
-            std::cout << "Enter number of elements: ";
-            std::cin >> N;
-
-            std::cout << "Enter elements: ";
-            for (int i = 0; i < N; ++i) {
-                int value;
+    std::cout << "1. Array to minHeap 2. insert 3. delete 4. print 0. quit > ";
+    while (std::cin >> command && command != 0) {
+        switch (command) {
+            case 1: {
+                int n;
+                std::cin >> n;
+                for (int i = 0; i < n; i++) {
+                    std::cin >> value;
+                    heap.insertKey(value);
+                }
+                std::cout << "minHeap => ";
+                heap.printHeap();
+                break;
+            }
+            case 2:
                 std::cin >> value;
                 heap.insertKey(value);
-            }
-            std::cout << "minHeap => ";
-            heap.printHeap();
+                std::cout << "minHeap => ";
+                heap.printHeap();
+                break;
+            case 3:
+                std::cout << "min value: " << heap.deleteKey() << std::endl;
+                std::cout << "minHeap => ";
+                heap.printHeap();
+                break;
+            case 4:
+                std::cout << "minHeap => ";
+                heap.printHeap();
+                break;
+            default:
+                std::cout << "Invalid command" << std::endl;
         }
-        else if (choice == 2) {
-            int value;
-            std::cout << "new value? ";
-            std::cin >> value;
-            heap.insertKey(value);
-            std::cout << "minHeap => ";
-            heap.printHeap();
-        }
-        else if (choice == 3) {
-            int minVal = heap.deleteKey();
-            if (minVal != -1)
-                std::cout << "min value: " << minVal << std::endl;
-            std::cout << "minHeap => ";
-            heap.printHeap();
-        }
-        else if (choice == 4) {
-            heap.printHeap();
-        }
-        else {
-            std::cout << "Bye!" << std::endl;
-            break;
-        }
+        std::cout << "1. Array to minHeap 2. insert 3. delete 4. print 0. quit > ";
     }
-
+    std::cout << "bye!" << std::endl;
     return 0;
 }

@@ -1,4 +1,3 @@
-// LinkedList.cpp
 #include "LinkedList.h"
 #include <iostream>
 
@@ -53,8 +52,10 @@ void LinkedList::bubbleSort() {
 // 리스트 출력
 void LinkedList::print() const {
     Node* current = head;
+    int rank = 1;
     while (current != nullptr) {
-        std::cout << current->score << " " << current->name << std::endl;
+        std::cout << rank << "> " << current->score << " " << current->name << std::endl;
         current = current->next;
+        rank++;
     }
 }
